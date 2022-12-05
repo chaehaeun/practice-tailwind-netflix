@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix</title>
+    <link rel="icon" href="./assets/tailwindcss.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-bg-img bg-black bg-no-repeat bg-contain">
+    <div class="max-w-7xl px-[25px] mx-auto my-5 xl:mt-10 xl:mb-16 xl:px-0">
+      <header class="flex justify-between items-center">
+        <h1>
+          <a href="/">
+            <img
+              src="./assets/Logo.svg"
+              alt="넷플릭스 로고"
+              class="w-[80px] md:w-full"
+            />
+          </a>
+        </h1>
+        <button
+          type="button"
+          class="bg-net-red rounded font-bold px-[13px] py-[6px] text-sTxt-xs md:py-2 md:px-3 md:text-sTxt-s"
+        >
+          로그인
+        </button>
+      </header>
+    </div>
+    <main
+      class="flex flex-col items-center pt-[68px] font-bold text-center xl:py-14 xl:mb-20"
+    >
+      <h2 class="mb-7 text-sTit-l md:text-sTit-2xl">
+        영화, TV 프로그램을 <br />무제한으로.
+      </h2>
+      <p class="mb-7 text-sTxt-l md:text-sTxt-xl font-bold">
+        다양한 디바이스에서 시청하세요. <br class="sm:hidden" />언제든 해지하실
+        수 있습니다.
+      </p>
+      <p
+        class="text-sTxt-s text-center md:text-sTxt-normal md:text-left md:font-bold"
+      >
+        시청할 준비가 되셨나요? 멤버십을 등록하거나 <br />재시작하려면 이메일
+        주소를 입력하세요.
+      </p>
+      <form class="lg:flex my-6 md:my-7">
+        <label class="hide text-base" for="emailInput">이메일 입력 칸</label>
+        <input
+          required
+          type="email"
+          id="emailInput"
+          placeholder="이메일 주소"
+          class="text-black px-5 py-[10px] rounded-[30px] text-sTxt-s md:h-[60px] md:w-[300px] md:text-sTxt-normal lg:px-5 lg:h-[60px] lg:w-[540px] lg:text-sTxt-normal lg:rounded-none"
+        />
+        <button
+          type="submit"
+          class="flex mx-auto mt-3 py-[10px] px-5 rounded-[30px] bg-net-red items-center justify-center text-sTxt-s font-bold lg:text-sTit-xs lg:mt-0 lg:rounded-none lg:px-5 lg:py-[17px]"
+        >
+          30일 무료 이용
+          <img
+            src="./assets/BtnArrow.svg"
+            aria-hidden="true"
+            alt="arrow"
+            class="ml-[10px]"
+          />
+        </button>
+      </form>
+      <p>신규 회원만 이 프로모션을 이용하실 수 있습니다.</p>
+    </main>
+
+    <section
+      class="py-5 px-[25px] border-t-4 border-b-4 border-net-gray mt-[70px] md:mt-[80px] md:py-0 xl:px-0"
+    >
+      <div
+        class="flex flex-col justify-between items-center max-w-7xl mx-auto my-10 mb-16 md:my-[60px] md:flex-row"
+      >
+        <div class="text-center md:text-left">
+          <h2
+            class="text-sTit-s mb-5 md:text-sTit-nomal lg:text-sTit-l xl:text-sTit-xl"
+          >
+            TV로 즐기세요.
+          </h2>
+          <p class="sTxt-normal mb-[10px] md:text-sTxt-l md:mb-0">
+            스마트 TV, PlayStation, Xbox, Chromecast, <br />
+            Apple TV, 블루레이 플레이어 등 다양한 <br />
+            디바이스에서 시청하세요.
+          </p>
+        </div>
+        <img
+          src="./assets/TV Content.png"
+          alt="TV 컨텐츠"
+          aria-hidden="true"
+          class="md:max-w-sm lg:max-w-full"
+        />
+      </div>
+    </section>
+    <section class="py-5 px-[25px] border-b-4 border-net-gray md:py-0 xl:px-0">
+      <div
+        class="flex flex-col justify-between items-center max-w-7xl mx-auto my-10 mb-16 md:my-[60px] md:flex-row-reverse"
+      >
+        <div class="text-center md:text-left">
+          <h2
+            class="text-sTit-s mb-5 md:text-sTit-nomal lg:text-sTit-l xl:text-sTit-xl"
+          >
+            즐겨 보는 콘텐츠를 저장해 <br />오프라인으로 시청하세요.
+          </h2>
+          <p class="sTxt-normal mb-[10px] md:text-sTxt-l md:mb-0">
+            간편하게 저장하고 빈틈없이 즐겨보세요.
+          </p>
+        </div>
+        <img
+          src="./assets/Video Frame.png"
+          alt="비디오 프레임"
+          aria-hidden="true"
+          class="md:max-w-sm lg:max-w-full"
+        />
+      </div>
+    </section>
+    <section class="py-5 px-[25px] border-b-4 border-net-gray md:py-0 xl:px-0">
+      <div
+        class="flex flex-col justify-between items-center max-w-7xl mx-auto my-10 mb-16 md:my-[60px] md:flex-row"
+      >
+        <div class="text-center md:text-left">
+          <h2
+            class="text-sTit-s mb-5 md:text-sTit-nomal lg:text-sTit-l xl:text-sTit-xl"
+          >
+            다양한 디바이스에서 <br />시청하세요.
+          </h2>
+          <p class="sTxt-normal mb-[10px] md:text-sTxt-l md:mb-0">
+            각종 영화와 TV 프로그램을 스마트폰, 태블릿, <br />노트북, TV에서
+            무제한으로 스트리밍하세요. <br />추가 요금이 전혀 없습니다.
+          </p>
+        </div>
+        <img
+          src="./assets/device.png"
+          alt="비디오 프레임"
+          aria-hidden="true"
+          class="md:max-w-sm lg:max-w-full"
+        />
+      </div>
+    </section>
+
+    <footer class="py-10 px-[25px] max-w-7xl mx-auto mb:py-12 xl:px-0">
+      <div>
+        <p class="text-[#c8c8c8] text-sTxt-xl font-bold mb-[26px] md:mb-[50px]">
+          질문이 있으신가요? <br class="sm:hidden" />문의 전화: 00-308-321-0058
+        </p>
+        <ul class="grid grid-cols-2 mb-[41px] md:mb-[30px] md:grid-cols-4">
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            자주 묻는 질문
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            고객센터
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            계정
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            미디어 센터
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            투자 정보(IR)
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            입사 정보
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            Netflix 지원 디바이스
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            이용 약관
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            개인정보
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            쿠키 설정
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            회사 정보
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            문의하기
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            속도 테스트
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            법적 고지
+          </li>
+          <li
+            class="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+          >
+            Netflix 오리지널
+          </li>
+        </ul>
+      </div>
+      <div aria-label="언어 선택 드롭다운" class="w-28 relative">
+        <span
+          class="flex justify-center text-gray-500 cursor-pointer border border-solid border-gray-500 py-3 rounded-sm"
+          ><img
+            src="./assets/global.svg"
+            aria-hidden="true"
+            alt="글로벌"
+            class="mr-2" />한국어
+          <img
+            src="./assets/bi_caret-down-fill.svg"
+            aria-hidden="true"
+            alt="드롭다운"
+            class="ml-2"
+        /></span>
+        <ul class="w-full absolute top-full py-2 bg-gray-400 px-2 hidden">
+          <li class="py-1 border-b border-gray-700">영어</li>
+          <li class="py-1 border-b border-gray-700">중국어</li>
+          <li class="py-1 border-b border-gray-700">일본어</li>
+          <li class="py-1">프랑스어</li>
+        </ul>
+      </div>
+      <div class="mt-[30px] md:mt-[46px]">
+        <h3
+          class="mb-[10px] text-sTxt-l text-footer-grey md:text-sTit-xs md:mb-4"
+        >
+          Netflix 대한민국
+        </h3>
+        <ul>
+          <li
+            class="text-sTxt-s text-gray-400 md:text-sTxt-normal md:text-bold"
+          >
+            넷플릭스서비시스코리아 유한회사
+          </li>
+          <li
+            class="text-sTxt-s text-gray-400 md:text-sTxt-normal md:text-bold"
+          >
+            통신판매업신고번호: 제2018-서울종로-0426호
+          </li>
+          <li
+            class="text-sTxt-s text-gray-400 md:text-sTxt-normal md:text-bold"
+          >
+            전화번호: 00-308-321-0058
+          </li>
+          <li
+            class="text-sTxt-s text-gray-400 md:text-sTxt-normal md:text-bold"
+          >
+            대표: 레지널드 톰프슨
+          </li>
+          <li
+            class="text-sTxt-s text-gray-400 md:text-sTxt-normal md:text-bold"
+          >
+            이메일 주소: korea@netflix.com
+          </li>
+          <li
+            class="text-sTxt-s text-gray-400 md:text-sTxt-normal md:text-bold"
+          >
+            주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층
+            우편번호 03161
+          </li>
+          <li
+            class="text-sTxt-s text-gray-400 md:text-sTxt-normal md:text-bold"
+          >
+            사업자 등록번호: 165-87-00119
+          </li>
+          <li
+            class="text-sTxt-s text-gray-400 md:text-sTxt-normal md:text-bold"
+          >
+            클라우드 호스팅: Amazon Web Services Inc.
+          </li>
+          <li
+            class="text-sTxt-s text-gray-400 md:text-sTxt-normal md:text-bold"
+          >
+            공정거래위원회 웹사이트
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -5,11 +5,13 @@ module.exports = {
     extend: {
       colors: {
         "net-red": "#E50914",
+        "hover-red": "#970008",
         "net-blue": "#0071EB",
         "net-green": "#2EDE75",
         "net-black": "#010101",
         "net-gray": "#757575",
         "footer-grey": "#acacac",
+        "footer-grey__address": "#919191",
       },
       padding: {
         "tb-18": "18px",

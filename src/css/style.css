@@ -517,6 +517,18 @@ video {
 
 /* Tailwind 유틸리티 클래스와 플러그인에 의해 등록된 모든 유틸리티 클래스를 주입합니다. */
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .absolute {
   position: absolute;
 }
@@ -577,6 +589,14 @@ video {
   margin-bottom: 10px;
 }
 
+.mb-\[26px\] {
+  margin-bottom: 26px;
+}
+
+.mb-\[41px\] {
+  margin-bottom: 41px;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -587,18 +607,6 @@ video {
 
 .mt-\[30px\] {
   margin-top: 30px;
-}
-
-.mb-\[26px\] {
-  margin-bottom: 26px;
-}
-
-.mb-\[51px\] {
-  margin-bottom: 51px;
-}
-
-.mb-\[41px\] {
-  margin-bottom: 41px;
 }
 
 .flex {
@@ -631,10 +639,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
@@ -839,15 +843,12 @@ video {
   font-weight: normal;
 }
 
-.text-sTxt-normal {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.0005em;
-  font-weight: normal;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.not-italic {
+  font-style: normal;
 }
 
 .text-black {
@@ -860,9 +861,9 @@ video {
   color: rgb(200 200 200 / var(--tw-text-opacity));
 }
 
-.text-gray-300 {
+.text-footer-grey {
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(172 172 172 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -870,14 +871,9 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-gray-400 {
+.text-footer-grey__address {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-footer-grey {
-  --tw-text-opacity: 1;
-  color: rgb(172 172 172 / var(--tw-text-opacity));
+  color: rgb(145 145 145 / var(--tw-text-opacity));
 }
 
 /* 사용자 정의 스타일 */
@@ -893,7 +889,7 @@ video {
   transition: all 0.3s;
 }
 
-.hide {
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -901,6 +897,11 @@ video {
   overflow: hidden;
   -webkit-clip-path: polygon(0 0, 0 0, 0 0);
           clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.hover\:bg-hover-red:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(151 0 8 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
@@ -928,28 +929,20 @@ video {
     margin-bottom: 0px;
   }
 
-  .md\:mt-\[46px\] {
-    margin-top: 46px;
+  .md\:mb-\[50px\] {
+    margin-bottom: 50px;
+  }
+
+  .md\:mb-\[30px\] {
+    margin-bottom: 30px;
   }
 
   .md\:mb-4 {
     margin-bottom: 1rem;
   }
 
-  .md\:mb-\[50px\] {
-    margin-bottom: 50px;
-  }
-
-  .md\:mb-\[46px\] {
-    margin-bottom: 46px;
-  }
-
-  .md\:mb-\[36px\] {
-    margin-bottom: 36px;
-  }
-
-  .md\:mb-\[30px\] {
-    margin-bottom: 30px;
+  .md\:mt-\[46px\] {
+    margin-top: 46px;
   }
 
   .md\:h-\[60px\] {

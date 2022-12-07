@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul
+      className="text-[#c8c8c8] text-sTxt-xl font-bold mb-[26px] md:mb-[50px]"
+    >
+      {[ ['자주 묻는 질문', '/'], ['고객센터', '/'], ['계정', '/'], ['미디어
+      센터', '/'], ['투자 정보(IR)', '/'], ['입사 정보', '/'], ['Netflix 지원
+      디바이스', '/'], ['이용 약관', '/'], ['개인정보', '/'], ['쿠키 설정',
+      '/'], ['회사 정보', '/'], ['문의하기', '/'], ['속도 테스트', '/'], ['법적
+      고지', '/'], ['Netflix 오리지널', '/'], ].map(([title, url]) => (
+      <a
+        href="{url}"
+        className="text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey"
+        >{title}</a
+      >
+      ))}
+    </ul>
+  </body>
+</html>

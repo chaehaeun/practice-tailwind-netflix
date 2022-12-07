@@ -10,15 +10,20 @@
 /* 사용자 정의 스타일 */
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
-[hidden] {
-  @apply hidden;
+* {
+  transition: all 0.3s;
+  /* base에 넣으면 이상해지는데 애초에 전역에 transition 넣는 것부터
+  잘못된 것인지 */
 }
 
-* {
-  color: #fff;
-  box-sizing: border-box;
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
-  transition: all 0.3s;
+@layer base {
+  * {
+    @apply box-border text-white font-spoqa;
+  }
+}
+
+[hidden] {
+  @apply hidden;
 }
 
 .sr-only {
@@ -28,4 +33,16 @@
   z-index: -1;
   overflow: hidden;
   clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-net-red rounded font-bold px-[13px] py-[6px] text-sTxt-xs hover:bg-hover-red md:py-2 md:px-3 md:text-sTxt-s;
+  }
+  .footer-menu {
+    @apply text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey;
+  }
+  .footer-info {
+    @apply not-italic text-sTxt-s text-footer-grey__address md:text-sTxt-normal md:font-bold;
+  }
 }

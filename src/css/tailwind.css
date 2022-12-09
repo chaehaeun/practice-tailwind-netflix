@@ -12,37 +12,22 @@
 
 * {
   transition: all 0.3s;
-  /* base에 넣으면 이상해지는데 애초에 전역에 transition 넣는 것부터
-  잘못된 것인지 */
 }
 
 @layer base {
   * {
-    @apply box-border text-white font-spoqa;
+    @apply box-border;
   }
-}
-
-[hidden] {
-  @apply hidden;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  z-index: -1;
-  overflow: hidden;
-  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-net-red rounded font-bold px-[13px] py-[6px] text-sTxt-xs hover:bg-hover-red md:py-2 md:px-3 md:text-sTxt-s;
+    @apply py-6 font-bold rounded bg-net-red px-13 text-sTxt-xs hover:bg-hover-red md:py-8 md:px-12 md:text-sTxt-s;
   }
   .footer-menu {
-    @apply text-sTxt-s mb-[10px] md:mb-4 md:text-sTxt-normal text-footer-grey;
+    @apply mb-10 text-gray-300 text-sTxt-s md:mb-4 md:text-sTxt-normal;
   }
   .footer-info {
-    @apply not-italic text-sTxt-s text-footer-grey__address md:text-sTxt-normal md:font-bold;
+    @apply not-italic text-gray-400 text-sTxt-s md:text-sTxt-normal md:font-bold;
   }
 }

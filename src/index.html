@@ -7,74 +7,74 @@
     <link rel="icon" href="./assets/tailwindcss.svg" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="bg-black bg-no-repeat bg-contain bg-bg-img">
-    <div class="max-w-7xl px-[25px] mx-auto my-5 xl:mt-10 xl:mb-16 xl:px-0">
+  <body class="text-white bg-black bg-no-repeat bg-contain bg-net-img">
+    <div class="mx-auto my-20 max-w-7xl px-25 xl:my-40 xl:px-0">
       <header class="flex items-center justify-between">
         <h1>
           <a href="/">
             <img
               src="./assets/Logo.svg"
               alt="넷플릭스 로고"
-              class="w-[80px] md:w-full"
+              class="w-80 md:w-full"
             />
           </a>
         </h1>
         <button type="button" class="btn-primary">로그인</button>
       </header>
     </div>
-    <main
-      class="flex flex-col items-center pt-[68px] font-bold text-center xl:py-14 xl:mb-20"
-    >
-      <h2 class="mb-7 text-sTit-l md:text-sTit-2xl">
-        영화, TV 프로그램을 <br />무제한으로.
-      </h2>
-      <p class="font-bold mb-7 text-sTxt-l md:text-sTxt-xl">
-        다양한 디바이스에서 시청하세요. <br class="sm:hidden" />언제든 해지하실
-        수 있습니다.
-      </p>
-      <p
-        class="text-center text-sTxt-s md:text-sTxt-normal md:text-left md:font-bold"
-      >
-        시청할 준비가 되셨나요? 멤버십을 등록하거나 <br />재시작하려면 이메일
-        주소를 입력하세요.
-      </p>
-      <form class="my-6 lg:flex md:my-7">
-        <label class="text-base sr-only" for="emailInput">이메일 입력 칸</label>
-        <input
-          required
-          type="email"
-          id="emailInput"
-          placeholder="이메일 주소"
-          class="text-black px-5 py-[10px] rounded-[30px] text-sTxt-s md:h-[60px] md:w-[300px] md:text-sTxt-normal lg:px-5 lg:h-[60px] lg:w-[540px] lg:text-sTxt-normal lg:rounded-none"
-        />
-        <button
-          type="submit"
-          class="flex items-center justify-center mx-auto mt-3 py-[10px] px-5 rounded-[30px] bg-net-red text-sTxt-s font-bold hover:bg-hover-red lg:text-sTit-xs lg:mt-0 lg:rounded-none lg:px-5 lg:py-[17px]"
+    <main class="py-20 xl:mt-70 xl:mb-20">
+      <div class="flex flex-col items-center my-48 text-center">
+        <h2 class="mb-24 text-sTit-l md:text-sTit-2xl">
+          영화, TV 프로그램을 <br />무제한으로.
+        </h2>
+        <p class="mb-24 font-bold text-sTxt-l md:text-sTxt-xl">
+          다양한 디바이스에서 시청하세요. <br class="sm:hidden" />언제든
+          해지하실 수 있습니다.
+        </p>
+        <p
+          class="text-center text-sTxt-s md:text-sTxt-normal md:text-left md:font-bold"
         >
-          30일 무료 이용
-          <img
-            src="./assets/BtnArrow.svg"
-            aria-hidden="true"
-            alt="arrow"
-            class="ml-[10px]"
-          />
-        </button>
-      </form>
-      <p>신규 회원만 이 프로모션을 이용하실 수 있습니다.</p>
+          시청할 준비가 되셨나요? 멤버십을 등록하거나 <br />재시작하려면 이메일
+          주소를 입력하세요.
+        </p>
+        <form class="my-24 md:my-28" method="post">
+          <fieldset class="lg:flex lg:items-center">
+            <legend class="sr-only">이메일 입력</legend>
+            <label class="text-base sr-only" for="emailInput"
+              >이메일 입력 칸</label
+            >
+            <input
+              required
+              type="email"
+              id="emailInput"
+              placeholder="이메일 주소"
+              class="px-20 py-10 mb-12 text-black w-245 rounded-30 text-sTxt-s md:h-60 md:w-300 md:text-sTxt-normal lg:w-540 lg:mb-0 lg:text-sTxt-normal lg:rounded-none"
+            />
+            <button
+              type="submit"
+              class="flex items-center justify-center px-20 py-10 mx-auto font-bold rounded-30 bg-net-red text-sTxt-s hover:bg-hover-red lg:h-60 lg:text-sTit-xs lg:mt-0 lg:rounded-none"
+            >
+              30일 무료 이용
+              <img src="./assets/BtnArrow.svg" alt="" class="ml-[10px]" />
+            </button>
+          </fieldset>
+        </form>
+        <p>신규 회원만 이 프로모션을 이용하실 수 있습니다.</p>
+      </div>
     </main>
-    <section
-      class="py-5 px-[25px] border-t-4 border-b-4 border-net-gray mt-[70px] md:mt-[80px] md:py-0 xl:px-0"
+    <article
+      class="py-16 border-t-4 border-b-4 px-18 border-net-gray md:mt-80 md:py-0 xl:px-0"
     >
       <div
-        class="flex flex-col justify-between items-center max-w-7xl mx-auto my-10 mb-16 md:my-[60px] md:flex-row"
+        class="flex flex-col items-center justify-between mx-auto my-60 max-w-7xl md:my-60 md:flex-row"
       >
         <div class="text-center md:text-left">
           <h2
-            class="mb-5 text-sTit-s md:text-sTit-nomal lg:text-sTit-l xl:text-sTit-xl"
+            class="mb-30 text-sTit-s md:text-sTit-nomal md:mb-20 lg:text-sTit-l xl:text-sTit-xl"
           >
             TV로 즐기세요.
           </h2>
-          <p class="sTxt-normal mb-[10px] md:text-sTxt-l md:mb-0">
+          <p class="mb-10 sTxt-normal md:text-sTxt-l md:mb-0">
             스마트 TV, PlayStation, Xbox, Chromecast, <br />
             Apple TV, 블루레이 플레이어 등 다양한 <br />
             디바이스에서 시청하세요.
@@ -83,18 +83,17 @@
         <img
           src="./assets/TV Content.png"
           alt="TV 컨텐츠"
-          aria-hidden="true"
           class="md:max-w-sm lg:max-w-full"
         />
       </div>
-    </section>
-    <section class="py-5 px-[25px] border-b-4 border-net-gray md:py-0 xl:px-0">
+    </article>
+    <article class="py-16 border-b-4 px-18 border-net-gray md:py-0 xl:px-0">
       <div
-        class="flex flex-col justify-between items-center max-w-7xl mx-auto my-10 mb-16 md:my-[60px] md:flex-row-reverse"
+        class="flex flex-col items-center justify-between mx-auto my-60 max-w-7xl md:my-60 md:flex-row-reverse"
       >
         <div class="text-center md:text-left">
           <h2
-            class="mb-5 text-sTit-s md:text-sTit-nomal lg:text-sTit-l xl:text-sTit-xl"
+            class="mb-30 text-sTit-s md:text-sTit-nomal md:mb-20 lg:text-sTit-l xl:text-sTit-xl"
           >
             즐겨 보는 콘텐츠를 저장해 <br />오프라인으로 시청하세요.
           </h2>
@@ -105,20 +104,19 @@
         <img
           src="./assets/Video Frame.png"
           alt="비디오 프레임"
-          aria-hidden="true"
           class="md:max-w-sm lg:max-w-full"
         />
       </div>
-    </section>
-    <section class="py-5 px-[25px] border-b-4 border-net-gray md:py-0 xl:px-0">
+    </article>
+    <article class="py-16 border-b-4 px-18 border-net-gray md:py-0 xl:px-0">
       <div
-        class="flex flex-col justify-between items-center max-w-7xl mx-auto my-10 mb-16 md:my-[60px] md:flex-row"
+        class="flex flex-col items-center justify-between mx-auto my-60 max-w-7xl md:my-60 md:flex-row"
       >
         <div class="text-center md:text-left">
           <h2
-            class="mb-5 text-sTit-s md:text-sTit-nomal lg:text-sTit-l xl:text-sTit-xl"
+            class="mb-30 text-sTit-s md:text-sTit-nomal md:mb-20 lg:text-sTit-l xl:text-sTit-xl"
           >
-            다양한 디바이스에서 <br />시청하세요.
+            다양한 디바이스에서 시청하세요.
           </h2>
           <p class="sTxt-normal mb-[10px] md:text-sTxt-l md:mb-0">
             각종 영화와 TV 프로그램을 스마트폰, 태블릿, <br />노트북, TV에서
@@ -128,22 +126,20 @@
         <img
           src="./assets/device.png"
           alt="비디오 프레임"
-          aria-hidden="true"
           class="md:max-w-sm lg:max-w-full"
         />
       </div>
-    </section>
+    </article>
 
-    <footer class="py-10 px-[25px] max-w-7xl mx-auto mb:py-12 xl:px-0">
+    <footer class="py-40 mx-auto px-25 max-w-7xl mb:py-12 xl:px-0">
       <div>
-        <p class="text-[#c8c8c8] text-sTxt-xl font-bold mb-[26px] md:mb-[50px]">
+        <p class="font-bold text-gray-200 text-sTxt-xl mb-26 md:mb-50">
           질문이 있으신가요? <br class="sm:hidden" />문의 전화: 00-308-321-0058
         </p>
-        <ul class="grid grid-cols-2 mb-[41px] md:mb-[30px] md:grid-cols-4">
+        <ul class="grid grid-cols-2 mb-41 md:mb-30px md:grid-cols-4">
           <li class="footer-menu">
             <a href="/">자주 묻는 질문</a>
           </li>
-
           <li class="footer-menu">
             <a href="/">고객센터</a>
           </li>
@@ -188,31 +184,21 @@
           </li>
         </ul>
       </div>
-      <div aria-label="언어 선택 드롭다운" class="relative w-28">
+      <div aria-label="언어 선택 드롭다운" class="relative w-113">
         <span
-          class="flex justify-center py-3 text-gray-500 border border-gray-500 border-solid rounded-sm cursor-pointer"
-          ><img
-            src="./assets/global.svg"
-            aria-hidden="true"
-            alt="글로벌"
-            class="mr-2" />한국어
-          <img
-            src="./assets/bi_caret-down-fill.svg"
-            aria-hidden="true"
-            alt="드롭다운"
-            class="ml-2"
+          class="flex justify-center py-12 text-gray-500 border border-gray-500 border-solid rounded-sm cursor-pointer"
+          ><img src="./assets/global.svg" alt="" class="mr-8" />한국어
+          <img src="./assets/bi_caret-down-fill.svg" alt="" class="ml-8"
         /></span>
-        <ul class="absolute hidden w-full px-2 py-2 bg-gray-400 top-full">
+        <ul class="absolute hidden w-full px-2 py-2 bg-gray-500 top-full">
           <li class="py-1 border-b border-gray-700">영어</li>
           <li class="py-1 border-b border-gray-700">중국어</li>
           <li class="py-1 border-b border-gray-700">일본어</li>
           <li class="py-1">프랑스어</li>
         </ul>
       </div>
-      <div class="mt-[30px] md:mt-[46px]">
-        <h3
-          class="mb-[10px] text-sTxt-l text-footer-grey md:text-sTit-xs md:mb-4"
-        >
+      <div class="mt-30 md:mt-46">
+        <h3 class="mb-10 text-gray-300 text-sTxt-l md:text-sTit-xs md:mb-4">
           Netflix 대한민국
         </h3>
         <ul>

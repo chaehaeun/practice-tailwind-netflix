@@ -6,7 +6,7 @@
   },
   "scripts": {
     "start": "run-p serve watch",
-    "serve": "live-server src --host=localhost --port=3000 --no-browser",
+    "serve": "live-server src --host=localhost --port=5000 --no-browser",
     "compile": "tailwindcss -i src/css/tailwind.css -o src/css/style.css",
     "watch": "npm run compile -- --watch"
   }

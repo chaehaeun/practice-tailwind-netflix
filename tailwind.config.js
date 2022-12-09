@@ -1,3 +1,8 @@
+const px0_10 = { ...Array.from(Array(11)).map((_, i) => `${i}px`) };
+const px0_100 = { ...Array.from(Array(101)).map((_, i) => `${i}px`) };
+const px0_200 = { ...Array.from(Array(201)).map((_, i) => `${i}px`) };
+const px0_600 = { ...Array.from(Array(601)).map((_, i) => `${i}px`) };
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
@@ -10,19 +15,23 @@ module.exports = {
         "net-green": "#2EDE75",
         "net-black": "#010101",
         "net-gray": "#757575",
-        "footer-grey": "#acacac",
-        "footer-grey__address": "#919191",
+        gray: {
+          200: "#c8c8c8",
+          300: "#ACACAC",
+          400: "#919191",
+          500: "#757575",
+        },
       },
-      padding: {
-        "tb-18": "18px",
+      padding: px0_100,
+      margin: px0_100,
+      backgroundImage: {
+        "net-img": "url('../assets/background.png')",
+      },
+      fontFamily: {
+        sans: ["Spoqa Han Sans Neo", "sans-serif"],
       },
       fontSize: {
         0: "0px",
-      },
-      backgroundImage: {
-        "bg-img": "url('../assets/background.png')",
-      },
-      fontSize: {
         "sTit-xs": [
           "22px",
           {
@@ -108,6 +117,10 @@ module.exports = {
           },
         ],
       },
+      spacing: px0_200,
+      borderWidth: px0_10,
+      borderRadius: px0_100,
+      width: px0_600,
     },
   },
   plugins: [],

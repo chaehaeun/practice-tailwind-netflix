@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: #c8c8c8;
   /* 2 */
 }
 
@@ -43,7 +43,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Spoqa Han Sans Neo, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -354,7 +354,7 @@ textarea {
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
-  color: #9ca3af;
+  color: #919191;
   /* 2 */
 }
 
@@ -362,7 +362,7 @@ input::placeholder,
 textarea::placeholder {
   opacity: 1;
   /* 1 */
-  color: #9ca3af;
+  color: #919191;
   /* 2 */
 }
 
@@ -417,6 +417,10 @@ video {
 
 [hidden] {
   display: none;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 *, ::before, ::after {
@@ -515,6 +519,79 @@ video {
 
 /* Tailwind 컴포넌트 클래스와 플러그인에 의해 등록된 컴포넌트 클래스를 주입합니다. */
 
+.btn-primary {
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 9 20 / var(--tw-bg-opacity));
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.0005em;
+  font-weight: normal;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(151 0 8 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .btn-primary {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.0005em;
+    font-weight: normal;
+  }
+}
+
+.footer-menu {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.0005em;
+  font-weight: normal;
+  --tw-text-opacity: 1;
+  color: rgb(172 172 172 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .footer-menu {
+    margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.0005em;
+    font-weight: normal;
+  }
+}
+
+.footer-info {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.0005em;
+  font-weight: normal;
+  font-style: normal;
+  --tw-text-opacity: 1;
+  color: rgb(145 145 145 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .footer-info {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.0005em;
+    font-weight: normal;
+    font-weight: 700;
+  }
+}
+
 /* Tailwind 유틸리티 클래스와 플러그인에 의해 등록된 모든 유틸리티 클래스를 주입합니다. */
 
 .sr-only {
@@ -546,66 +623,67 @@ video {
   margin-right: auto;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.my-48 {
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.my-24 {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
+.my-60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
 }
 
 .ml-\[10px\] {
   margin-left: 10px;
 }
 
-.mt-\[70px\] {
-  margin-top: 70px;
+.mb-30 {
+  margin-bottom: 30px;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 .mb-\[10px\] {
   margin-bottom: 10px;
 }
 
-.mb-\[26px\] {
+.mb-26 {
   margin-bottom: 26px;
 }
 
-.mb-\[41px\] {
+.mb-41 {
   margin-bottom: 41px;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
+.mr-8 {
+  margin-right: 8px;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
+.ml-8 {
+  margin-left: 8px;
 }
 
-.mt-\[30px\] {
+.mt-30 {
   margin-top: 30px;
 }
 
@@ -621,12 +699,16 @@ video {
   display: none;
 }
 
-.w-\[80px\] {
+.w-80 {
   width: 80px;
 }
 
-.w-28 {
-  width: 7rem;
+.w-245 {
+  width: 245px;
+}
+
+.w-113 {
+  width: 113px;
 }
 
 .w-full {
@@ -661,11 +743,7 @@ video {
   justify-content: space-between;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-\[30px\] {
+.rounded-30 {
   border-radius: 30px;
 }
 
@@ -700,7 +778,7 @@ video {
 
 .border-gray-500 {
   --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+  border-color: rgb(117 117 117 / var(--tw-border-opacity));
 }
 
 .border-gray-700 {
@@ -718,12 +796,12 @@ video {
   background-color: rgb(229 9 20 / var(--tw-bg-opacity));
 }
 
-.bg-gray-400 {
+.bg-gray-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+  background-color: rgb(117 117 117 / var(--tw-bg-opacity));
 }
 
-.bg-bg-img {
+.bg-net-img {
   background-image: url('../assets/background.png');
 }
 
@@ -735,74 +813,63 @@ video {
   background-repeat: no-repeat;
 }
 
-.px-\[25px\] {
+.px-25 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
-.px-\[13px\] {
-  padding-left: 13px;
-  padding-right: 13px;
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.py-\[6px\] {
-  padding-top: 6px;
-  padding-bottom: 6px;
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.py-\[10px\] {
+.py-10 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.px-18 {
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.py-2 {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.pt-\[68px\] {
-  padding-top: 68px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 .text-center {
   text-align: center;
-}
-
-.text-sTxt-xs {
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: -0.0005em;
-  font-weight: normal;
 }
 
 .text-sTit-l {
@@ -847,8 +914,9 @@ video {
   font-weight: 700;
 }
 
-.not-italic {
-  font-style: normal;
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -856,47 +924,25 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-\[\#c8c8c8\] {
+.text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(200 200 200 / var(--tw-text-opacity));
 }
 
-.text-footer-grey {
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(117 117 117 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(172 172 172 / var(--tw-text-opacity));
 }
 
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.text-footer-grey__address {
-  --tw-text-opacity: 1;
-  color: rgb(145 145 145 / var(--tw-text-opacity));
-}
-
 /* 사용자 정의 스타일 */
 
-[hidden] {
-  display: none;
-}
-
 * {
-  color: #fff;
-  box-sizing: border-box;
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
   transition: all 0.3s;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  -webkit-clip-path: polygon(0 0, 0 0, 0 0);
-          clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 .hover\:bg-hover-red:hover {
@@ -911,41 +957,41 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:my-7 {
-    margin-top: 1.75rem;
-    margin-bottom: 1.75rem;
+  .md\:my-28 {
+    margin-top: 28px;
+    margin-bottom: 28px;
   }
 
-  .md\:my-\[60px\] {
+  .md\:my-60 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 
-  .md\:mt-\[80px\] {
+  .md\:mt-80 {
     margin-top: 80px;
+  }
+
+  .md\:mb-20 {
+    margin-bottom: 20px;
   }
 
   .md\:mb-0 {
     margin-bottom: 0px;
   }
 
-  .md\:mb-\[50px\] {
+  .md\:mb-50 {
     margin-bottom: 50px;
   }
 
-  .md\:mb-\[30px\] {
-    margin-bottom: 30px;
-  }
-
-  .md\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
-  .md\:mt-\[46px\] {
+  .md\:mt-46 {
     margin-top: 46px;
   }
 
-  .md\:h-\[60px\] {
+  .md\:mb-4 {
+    margin-bottom: 4px;
+  }
+
+  .md\:h-60 {
     height: 60px;
   }
 
@@ -953,7 +999,7 @@ video {
     width: 100%;
   }
 
-  .md\:w-\[300px\] {
+  .md\:w-300 {
     width: 300px;
   }
 
@@ -973,16 +1019,6 @@ video {
     flex-direction: row-reverse;
   }
 
-  .md\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .md\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -990,13 +1026,6 @@ video {
 
   .md\:text-left {
     text-align: left;
-  }
-
-  .md\:text-sTxt-s {
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: -0.0005em;
-    font-weight: normal;
   }
 
   .md\:text-sTit-2xl {
@@ -1045,6 +1074,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -1053,11 +1086,11 @@ video {
     display: flex;
   }
 
-  .lg\:h-\[60px\] {
+  .lg\:h-60 {
     height: 60px;
   }
 
-  .lg\:w-\[540px\] {
+  .lg\:w-540 {
     width: 540px;
   }
 
@@ -1065,18 +1098,12 @@ video {
     max-width: 100%;
   }
 
+  .lg\:items-center {
+    align-items: center;
+  }
+
   .lg\:rounded-none {
     border-radius: 0px;
-  }
-
-  .lg\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .lg\:py-\[17px\] {
-    padding-top: 17px;
-    padding-bottom: 17px;
   }
 
   .lg\:text-sTxt-normal {
@@ -1100,26 +1127,22 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:mt-10 {
-    margin-top: 2.5rem;
+  .xl\:my-40 {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
-  .xl\:mb-16 {
-    margin-bottom: 4rem;
+  .xl\:mt-70 {
+    margin-top: 70px;
   }
 
   .xl\:mb-20 {
-    margin-bottom: 5rem;
+    margin-bottom: 20px;
   }
 
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .xl\:py-14 {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
   }
 
   .xl\:text-sTit-xl {

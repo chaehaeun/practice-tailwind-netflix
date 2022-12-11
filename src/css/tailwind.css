@@ -10,12 +10,12 @@
 /* 사용자 정의 스타일 */
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
-* {
+/* body * {
   transition: all 0.3s;
-}
+} */
 
 @layer base {
-  * {
+  body * {
     @apply box-border;
   }
 }

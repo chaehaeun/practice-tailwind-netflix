@@ -3,6 +3,16 @@ const px0_100 = { ...Array.from(Array(101)).map((_, i) => `${i}px`) };
 const px0_200 = { ...Array.from(Array(201)).map((_, i) => `${i}px`) };
 const px0_600 = { ...Array.from(Array(601)).map((_, i) => `${i}px`) };
 
+const array0to600 = Array(10)
+  .fill("0")
+  .map((_, i) => {
+    let key = {};
+    key[`cSpacing${i}`] = `${i}px`;
+    return key;
+  });
+
+const cSpacing0_600 = { ...array0to600 };
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
@@ -118,6 +128,8 @@ module.exports = {
         ],
       },
       spacing: px0_200,
+      spacing: cSpacing0_600,
+      height: px0_100,
       borderWidth: px0_10,
       borderRadius: px0_100,
       width: px0_600,

@@ -419,7 +419,7 @@ video {
   display: none;
 }
 
-* {
+body * {
   box-sizing: border-box;
 }
 
@@ -651,7 +651,7 @@ video {
   margin-bottom: 12px;
 }
 
-.ml-\[10px\] {
+.ml-10 {
   margin-left: 10px;
 }
 
@@ -872,12 +872,6 @@ video {
   text-align: center;
 }
 
-.text-sTit-l {
-  font-size: 34px;
-  line-height: 1.2;
-  font-weight: bold;
-}
-
 .text-sTxt-l {
   font-size: 18px;
   line-height: 1.5;
@@ -908,6 +902,12 @@ video {
   line-height: 1.5;
   letter-spacing: -0.0005em;
   font-weight: normal;
+}
+
+.text-sTit-l {
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: bold;
 }
 
 .font-bold {
@@ -941,9 +941,9 @@ video {
 
 /* 사용자 정의 스타일 */
 
-* {
+/* body * {
   transition: all 0.3s;
-}
+} */
 
 .hover\:bg-hover-red:hover {
   --tw-bg-opacity: 1;
@@ -995,8 +995,8 @@ video {
     height: 60px;
   }
 
-  .md\:w-full {
-    width: 100%;
+  .md\:w-140 {
+    width: 140px;
   }
 
   .md\:w-300 {
